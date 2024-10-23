@@ -2,16 +2,17 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: aqua;
+    color: white;
     background-image: url(code.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover; 
+    margin: 0;
 }
 
 header {
     display: flex;
-    background-color: grey;
-
+    background-color: white;
 }
 
 nav {
@@ -42,7 +43,6 @@ nav {
     text-decoration: none;
     list-style: none;
     color: black;
-
 }
 
 .navlinks li a:hover {
@@ -53,48 +53,64 @@ a {
     padding-right: 10px;
 }
 
-h1 {
-    font-size: 1.5rem;
-    }
-
+/* Content styling */
 .flex-container {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    padding-top: 20px;
+    gap: 0;  /* Remove gap between boxes */
+    margin: 50px auto;  /* Center and add top margin */
+    max-width: 1200px;  /* Limit maximum width */
 }
 
-.flex-container div {
-    flex: 1;  /* This makes all boxes take equal width */
-    padding: 20px;
-    text-align: center;
-    min-width: 200px;  /* Ensures boxes don't get too narrow */
+.flex-container > div {
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    opacity: 0.8;  /* Make text slightly transparent */
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* Individual box styling */
 .basisprog {
     background-color: #4a4a4a;
-    width: 80px;
 }
 
 .html {
     background-color: #5a5a5a;
-    width: 80px;
 }
 
 .css {
     background-color: #6495ED;
-    width: 80px;
 }
 
 .bootstrap {
     background-color: #7B68EE;
-    width: 80px;
 }
 
-/* to change the icons from black to white 
-as well as change their size */
-
+/* Icon styling */
 .fa-solid.fa-circle-chevron-right {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
+    margin-top: auto;  /* Push icon to bottom */
+    align-self: flex-start;
+    opacity: 0.8;
 }
