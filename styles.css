@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     background-color: grey;
-    
+
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
 }
 
 .logo {
-    margin-right: 20px;
+    padding-left: 10%;
 }
 
 .logo img {
@@ -34,7 +34,7 @@ nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    padding-right: 10%;
     margin: 0;
 }
 
@@ -42,7 +42,7 @@ nav {
     text-decoration: none;
     list-style: none;
     color: black;
-    
+
 }
 
 .navlinks li a:hover {
@@ -53,5 +53,48 @@ a {
     padding-right: 10px;
 }
 
+h1 {
+    font-size: 1.5rem;
+    }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 20px;
+}
 
+.flex-container div {
+    flex: 1;  /* This makes all boxes take equal width */
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;  /* Ensures boxes don't get too narrow */
+}
+
+.basisprog {
+    background-color: #4a4a4a;
+    width: 80px;
+}
+
+.html {
+    background-color: #5a5a5a;
+    width: 80px;
+}
+
+.css {
+    background-color: #6495ED;
+    width: 80px;
+}
+
+.bootstrap {
+    background-color: #7B68EE;
+    width: 80px;
+}
+
+/* to change the icons from black to white 
+as well as change their size */
+
+.fa-solid.fa-circle-chevron-right {
+    font-size: 2rem;
+    color: white;
+}
